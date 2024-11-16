@@ -16,6 +16,7 @@ class Configuration
     public readonly string $lang;
     public readonly string $version;
     public readonly float $timeout;
+    public readonly float $batchTimeout;
     public readonly int $pingInterval;
 
     public readonly string $inboxPrefix;
@@ -46,6 +47,7 @@ class Configuration
         'port' => 4222,
         'reconnect' => true,
         'timeout' => 1,
+        'batchTimeout' => 0.05,
         'token' => null,
         'user' => null,
         'nkey' => null,

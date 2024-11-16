@@ -18,7 +18,7 @@ class Queue
         public readonly Client $client,
         public readonly string $subject,
     ) {
-        $this->timeout = $client->configuration->timeout;
+        $this->timeout = $client->configuration->batchTimeout;
     }
 
     public function fetch(): ?Msg
